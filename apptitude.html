@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aptitude Test Interface</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h2>TCS NQT 2025</h2>
+  <div class="subject-tabs">
+    <span>Mathematics</span>
+    <span>Reasoning</span>
+    <span>Computer & English</span>
+  </div>
+  <div>
+    <span id="timer">Time Left: 10:00</span>
+    <button id="submitBtn">Submit Test</button>
+  </div>
+</header>
+
+<div class="container">
+  <div class="question-area">
+    <div class="question">
+      <div id="question"></div>
+<div id="options"></div>
+
+      <p>1. How much work is done to slide a crate for a distance of 25 meters along a loading dock by pulling it with a force of 180 N, where the dock is at an angle of 45° from the horizontal?</p>
+      <div class="options">
+        <label><input type="radio" name="q1"> A. 3.18198 × 10³ J</label>
+        <label><input type="radio" name="q1"> B. 3.18198 × 10² J</label>
+        <label><input type="radio" name="q1"> C. 3.4341 × 10³ J</label>
+        <label><input type="radio" name="q1"> D. 3.4341 × 10⁴ J</label>
+      </div>
+    </div>
+
+    <div class="question" id="question1">
+      <p>2. How much work is done...</p>
+      <label><input type="radio" name="q2"> A. basic</label><br>
+      <label><input type="radio" name="q2"> B. intermediate</label><br>
+      <label><input type="radio" name="q2"> C. advance</label><br>
+      <label><input type="radio" name="q2"> D. pro</label>
+    </div>
+
+    <div class="question" id="question2">
+      <p>3. where is your home....?</p>
+      <label><input type="radio" name="q3"> A. nanded</label><br>
+      <label><input type="radio" name="q3"> B. pune</label><br>
+      <label><input type="radio" name="q3"> C. delhi</label><br>
+      <label><input type="radio" name="q3"> D. hyderabad</label>
+    </div>
+    
+    <div class="bottom-nav">
+      <button onclick="prev()">Previous</button>
+      <button onclick="next()">Next</button>
+    </div>
+  </div>
+
+  <div class="navigation">
+    <h4>Navigation</h4>
+    <div class="navigator" id="navigator">
+
+      
+      <!-- Question buttons will be added by JavaScript -->
+    </div>
+    <div style="margin-top:20px;">
+      <p><strong>Test Details</strong></p>
+      <p>Total: 50</p>
+      <p>Attempted: 0</p>
+      <p>Unattempted: 50</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
